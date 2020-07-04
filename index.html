@@ -9,17 +9,28 @@
         <link rel="stylesheet" type="text/css" href="./assets/CSS/HW02.css">
 
         <!--bootstrap-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
+
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!--Popper JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!--Latest JavaScript-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
         <!--Responsive viewport-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--"width=device-width": sets the width of the page to follow the width of the device
+            "initial-scale=1":set initial zoom level when browser first loads the page-->
 
     </head>
 
 
     <body>
 
-        <div class="wrapper"> <!--page wrapper-->
+        <container class="container-fluid"> <!--page wrapper-->
 
             <header class="row">
                 
@@ -32,8 +43,33 @@
             </header>
 
 
-            <nav class="row navContainer">
-        
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <!--"navbar-expand-sm" dictates how small the screen must become in order for X to Y-->
+                <a href="#" class="navbar-brand">NAVBARNAVBAR</a>
+                <!--This is the title link for the nav-->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
+                    <!--"data-toggle" is an attribute assigned to this button that stores the command for toggling and flips it. This requires jQuery and the other 2 scripts-->
+                    <span class="navbar-toggle-icon"></span>
+                </button>
+                <!--this button is placed on the menu to allow the user to show/hide the items that follow if their screen is too small-->
+                <div class="collapse navbar-collapse" id=navMenu> 
+                    <!--Wraps the unordered list and forces its layout to not use the vertical default (flexdirection is disabled)-->
+                    <ul class="navbar-nav mr-auto">       
+                        <!--margin-right auto pushes all items in the list to the left, keeping the right space available for additional items-->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home/About<a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
                 <div class="col-sm-4">
         
                 </div> <!--close col about-->
@@ -98,7 +134,7 @@
 
             </footer> <!--close footer-->
 
-        </wrapper> <!--close the wrapper-->
+        </container> <!--close the wrapper-->
 
     </body> <!--close body-->
 
@@ -106,11 +142,6 @@
 
                         
                 
-
-
-
-
-
 
 
 
