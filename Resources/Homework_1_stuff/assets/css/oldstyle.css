@@ -1,0 +1,191 @@
+/*:::LARGE CONTAINERS:::*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../images/css-lattice-pattern.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    background-color: rgb(138, 138, 131);
+    padding: 5pt;
+    margin: 5pt;
+    margin-top: 0pt;
+    border-style: groove;
+    border-color: rgb(188, 209, 255);
+    border-width: 5pt;
+}
+
+.leftCol {
+    height: auto;
+    width: auto;
+}
+
+.rightCol {
+    height: auto;
+    width: auto;
+}
+
+.rowProp {
+    background-color: hsla(120, 50%, 10%, 0.8);
+    margin-top: 5pt;
+    padding: 10px;
+    height: auto;
+}
+
+
+/*:::ELEMENT CONTAINERS:::*/
+
+.headerBox {
+    background-color: #0b0b0c;
+    border-style: groove;
+    border-color: rgb(188, 209, 255);
+    border-width: 5pt;
+    padding: 8pt;
+}
+
+.navBar {
+    margin-top: 18pt;
+}
+
+.hero {
+    margin-bottom: 25px;
+    margin-top: 5px;
+    padding-top: 25px;
+    background-image: url("../images/robot-arm.jpg");
+    background-position: center;
+    border-style: groove;
+    border-color: rgb(188, 209, 255);
+    border-width: 5pt;
+}
+
+.asideBox {
+    display: inline-block;
+    background-color: hsla(120, 50%, 10%, 0.8);
+    padding: 1% 5% 5% 5%;
+    margin-bottom: 30pt;
+    height: auto;
+}
+
+.sectionBox {
+    margin-bottom: 20px;
+    margin-left: 50px;
+    padding: 50px;
+    height: 400px;
+    width: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: hsla(240, 37%, 28%, 0.664);
+    color: #ffffff;
+}
+
+.footer {
+    background-color: rgb(138, 138, 131);
+    border-style: groove;
+    border-color: rgb(188, 209, 255);
+    border-width: 5pt;
+    padding: 8pt;
+    text-align: center;
+}
+
+
+/*:::TYPOGRAPHY:::*/
+
+.logoText {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: -webkit-linear-gradient(rgb(18, 70, 138), rgb(152, 255, 195));
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 15pt;
+}
+
+.navText {
+    color: rgb(7, 186, 209);
+    font-size: 11pt;
+    text-align: center;}
+
+.slogan {
+    color: white;
+    font-size: 19pt;
+    font-style: oblique;
+    text-align: justify;
+}
+
+.asideHeader {
+    color: rgb(199, 199, 199);
+    font-size: 30pt;
+    width: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20pt;
+    font-weight: bold;
+    font-family: 'Blinker', sans-serif;
+}
+
+.asideText {
+    color: rgb(0, 0, 0);
+    font-size: 18pt;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20pt;
+    font-family: 'Blinker', sans-serif;
+    font-weight: bold;
+}
+
+.sectionText {
+    color: hsla(120, 5%, 80%, 1);
+    font-size: 18pt;
+    width: auto;
+    font-family: 'Blinker', sans-serif;
+}
+
+.sectionHead {
+    color: black;
+    margin-top: 15%;
+    font-family: 'Blinker', sans-serif;
+    font-size: 26pt;
+    font-weight: bold;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
+
+/*:::LAYOUT AND DYNAMICS:::*/
+
+.navText:hover {
+    color: green;
+}
+
+.asideImg {
+    display: block;
+    height: 30%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    padding: 0px;
+}
+
+.float-left {
+    float: left;
+    max-width: 100%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+.float-right {
+    float: right;
+    max-width: 100%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}

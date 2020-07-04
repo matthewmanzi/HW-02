@@ -1,0 +1,82 @@
+/*CONTAINER PARAMETERS*/
+
+.wrapper {
+    display: inline-block;
+    width: 800px;
+    color: grey;
+
+}
+
+.headerContainer {
+    display: inline-block;
+    width: 90%;
+    color: purple;
+
+}
+
+.navContainer {
+    display: block;
+    width: 50%;
+    color: green;
+
+}
+
+.mainContainer {
+    width: 100%;
+    color: yellow;
+
+}
+
+#contactInfo {
+    width: 80%;
+    color: blue;
+
+}
+
+#nameInfo {
+    width: 70%;
+    color: black;
+
+}
+
+#emailInfo {
+    width: 70%;
+    color: brown;
+
+}
+
+#messageMe {
+    width: 70%;
+    color: orange;
+
+}
+
+#messageBox {
+    width: 100%;
+    color: cyan;
+
+}
+
+.footerBox {
+    width: 100%;
+    color: pink;
+
+}
+
+
+
+/*TEXT PARAMETERS*/
+
+.headerProp {
+    color: blue;
+}
+
+
+
+/*INTERACTIVE ITEMS*/
+
+#sendmessage {
+    width: 20%;
+    color: aqua;
+
+}
