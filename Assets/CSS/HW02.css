@@ -1,17 +1,13 @@
 /*CONTAINER PARAMETERS*/
 
-.wrapper {
-    display: container-fluid;
-    width: 800px;
-    color: grey;
 
-}
 
 .headerContainer {
-    display: inline-block;
-    width: 90%;
-    color: purple;
-
+    background-image: url("../images/MTPheaderthumb.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
 }
 
 .navContainer {
@@ -57,7 +53,7 @@
 
 }
 
-.footerBox {
+.footerProps {
     width: 100%;
     color: pink;
 
@@ -67,10 +63,35 @@
 
 /*TEXT PARAMETERS*/
 
-.headerProp {
-    color: blue;
+.fancyLogo {
+    background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
+    color: red;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    font-size: 100px;
+    font-family: 'Permanent Marker', cursive;
+    width: auto;
+    margin: 50px auto;
+    text-align: center;
 }
 
+.page1Title {
+    color: green;
+}
+
+.headSubtext {
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 28pt;
+    color: rgb(0, 0, 0);
+    Font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: -webkit-linear-gradient(rgb(190, 122, 12), rgb(9, 21, 192));
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 0pt;
+}
 
 
 /*INTERACTIVE ITEMS*/

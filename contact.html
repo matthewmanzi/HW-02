@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Information</title>
+
+         <!--Clear CSS-->
+         <link rel="stylesheet" type="text/css" href="./assets/CSS/reset.css">
+
+         <!--CSS stylsheet-->
+         <link rel="stylesheet" type="text/css" href="./assets/CSS/HW02.css">
+ 
+         <!--bootstrap-->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
+ 
+         <!--jQuery-->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+         <!--Popper JS-->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ 
+         <!--Latest JavaScript-->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+ 
+         <!--Linked JS file containing my scripts-->
+         <script src="./assets/JS/HW02.js"></script>
+ 
+         <!--Responsive viewport-->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             <!--"width=device-width": sets the width of the page to follow the width of the device
+             "initial-scale=1":set initial zoom level when browser first loads the page-->
+    </head>
+
+    <body>
+        
+        <container class="container-fluid">
+
+            <main class="mainContainer"> 
+            <!--to include header, info, message box, and send button-->
+            
+                <section id="nameInfo"> 
+                <!--to include name info-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3>Name</h3>
+                            <p>Matthew Manzi, PharmD</p>
+                        </div>
+                    </div>
+                </section>
+
+
+            <section id="contactInfo"> 
+            <!--to include all items related to contacting me-->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3>Contact info</h3>
+                        <p>Email: MattManziPharmacist@gmail.com</p>
+                        <p>Github: <a href="https://github.com/matthewmanzi" alt="My first and last name without spaces, at Github.com">https://github.com/matthewmanzi</a></p>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="messageMe"> 
+            <!--to include message box for email message and button-->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3>Send me a message!</h3>
+                        <kbd id="messageBox"> 
+                        <!--section for textual input from the user-->
+                            <form class="form-line">
+                                <input class="form-control mr-sm-2" type="email" placeholder="Send us a message!" aria-label="Send">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Send!</button>
+                            </form>
+
+
+
+
+
+
+                        <!--:::SCRIPT TO INCLUDE MESSAGE FORM HERE:::-->
+                    
+                        </kbd> <!--close message box section-->
+            
+                        <button id="sendMessage">
+                        <!--:::NEEDS MORE STUFF:::-->
+                            Submit
+                        </button>
+
+        </section> <!--close messaging section-->
+
+    </section> <!--close contact session-->
+
+</main>
