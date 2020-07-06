@@ -4,6 +4,10 @@
 
 
 
+<!--:::::::::::::::::::::::::::::-->
+<!--:::START-HTML HOUSEKEEPING:::-->
+<!--:::::::::::::::::::::::::::::-->
+
         <!--CSS stylsheet-->
         <link rel="stylesheet" href="./Assets/CSS/HW02.css">
 
@@ -41,10 +45,9 @@
 <!--:::BEHIND THE SCENES ITEMS:::-->
 <!--:::::::::::::::::::::::::::::-->
 
-    <div id="pageTitle" hidden>landing page</div>
+    <div id="pageTitle" hidden>landing</div>
     <!--hidden text used to self-reference the page when needed-->
     
-       
     <container class="container-"> <!--page wrapper-->
             
 
@@ -54,23 +57,21 @@
 <!--:::::::::::::::::::::::::::::-->
 
         <header class="headerContainer">
-            <div class="row">
+            <div class="row logoRow">
                 <div class="col-sm-12">
-                    <h1 class="fancyLogo">Idle Hands Pharmacy Automation Solutions</h1>
+                    <h2 class="fancyLogo">Idle Hands Pharmacy Automation Solutions</h1>
                 </div>
             </div> <!--close top row-->
 
             <div class="row">
-                <div class="col-sm-7"></div> <!--gutter-->
-                <div class="col-sm-5">
-                    <h4 class="headSubtext">They say that idle hands are the devil's playthings...</h4>
-                    <h4 class="headSubtext">But why have your team doing jobs that a robot could do?</h4>
+                <div class="col-sm-3"></div> <!--gutter-->
+                <div class="col-sm-9">
+                    <h3 class="headSubtext">Optimize your workflow by recovering every precious wasted second during the day. At IHPAS, we don't think big. We think small, because the devil is in the details, not your hands.</h3>
                 </div> <!--Close subtext col-->
-            </div>
-        </div>
-            <div class="row" style="height: 50pt"></div>
-        </header> <!--Close header-->
+            </div> <!--close row-->
 
+            <div class="row" style="height: 10pt"></div>
+       
 
 
 
@@ -78,348 +79,142 @@
 <!--:::::::NAVIGATION BAR::::::::-->
 <!--:::::::::::::::::::::::::::::-->
 
-        <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+        <nav class="navbar navbar-expand-sm navbar-dark navContainer">
             <!--"navbar-expand-sm" dictates how small the screen must become in order for X to Y-->
-            <a href="#" class="navbar-brand" font-size="14pt">Explore Idle Hands Pharmacy Automation:</a>
+            <div class="navHeaderText"><b>Explore Idle Hands:</b></div>
             <ul class="navbar-nav mr-auto">       
                 <!--Notes: margin-right (mr) auto pushes all items in the list to the left, keeping the right space available for additional items-->
                 
                 <li class="nav-item nav-justified">
-                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    <a href="portfolio.html" class="nav-link naxText">Portfolio</a>
                 </li>
                 
-                <li class="nav-item nav-justified">
+                <li class="nav-item nav-justified navText">
                     <a href="contact.html" class="nav-link">Contact Information</a>
                 </li>
                 
-                <li class="nav-item nav-justified">
+                <li class="nav-item nav-justified navText">
                     <a href="#" class="nav-link">Home/About Me</a>
                 </li>
                 
-                <li class="nav-item nav-justified">
-                    <a class="nav-link">You are currently on the <script>youAreHere()</script>.</a>
-                </li>
-                    
+                <li class="nav-item nav-justified navText">
+                    <a class="nav-link"> || You are currently on the <b><script>youAreHere()</script></b> page.</a>
+                </li>                
             </ul>
         </nav>
 
+        </header> <!--Close header-->
 
 <!--:::::::::::::::::::::::::::::-->
 <!--::::::::PRIMARY INFO:::::::::-->
 <!--:::::::::::::::::::::::::::::-->
 
-        <main>
-            <section class="shortStory">                <!--Short BG info about me and IHPAS-->
-                <div class="row mattAndIHPA">           <!--contains stories for me and IHPAS-->
-                    <div class="col-sm-4 aboutMatt">    <!--short bg me only-->
+            <article id="mattAndIHPAS">
+                <section class="row" >     <!--contains stories for me and IHPAS-->
+                    <div class="col-sm-1 gutterCol"></div> <!--gutter-->
+                    <div class="col-sm-5" id="aboutMatt">   <!--short bg me only-->
+                        <p>Matt Manzi is currently a practicing pharmacist-in-charge at an independent pharmacy in Milltown, New Jersey. The aptly-named "Milltown Pharmacy" has been a familiar fixture in the quaint historical town, serving its community since 1985.</p>
+                        <br>
+                        <p>Having served in big box retail settings for a few years after he graduated, Matt became disenfranchised with corporate pharmacy's policy of treating his patients like pieces of a grand statistics game and left it all behind to find his place in a setting where he could better serve his people with more freedom and with the time and respect they deserve.</p>
+                        <br>
+                        <p>Not long after leaving his corporate lifestyle behind, he was approached by two savvy entrepreneurs who were looking for a young managerial upstart to take over the pharmacy they had acquired two years prior. In recently deciding to expand their business to two pharmacies, they had need of a pharmacy manager to take charge of their home store. They hired Matt for the position, and the rest is history.</p>
+                        <br>
+                        <p>Now, as Matt begins his transition toward full command of Milltown Pharmacy, he is looking for ways to streamline the pharmacy workload in the clunky layout of the aged edifice. To that end, he has enrolled in Rutgers Coding Bootcamp part-time to learn about full-stack web development to develop his foundational knowledge of coding, and to spring forth from this new education into the world of creating automated processes that could replace some of the workload handed to the pharmacy technicians, thereby freeing them up to handle more of the back-end profitability tasks that are crucial to keeping the pharmacy in business.</p>
+                    </div> <!--close my story-->
 
-                    </div>                              <!--close my story-->
-                    
-                    <div class="col-sm-4">              <!--short bg IHPAS only-->
+                    <div class="col-sm-5" id="aboutIHPAS">      <!--short bg IHPAS only-->
+                        <p>Idle Hands Pharmacy Automation Solutions (IHPAS) is the brainchild of Matt’s motivation to increase productivity and profitability at Milltown Pharmacy, without sacrificing any of the precious trust and love that it shares with the community.</p>
+                        <br>
+                        <p>Central to the philosophy of IHPAS is identifying “Dead Time” in a pharmacy’s workload throughout the day. Dead Time is found in the minutia of a staff member’s usual daily tasks and work. Dead Time is the seconds, microseconds, or less that a worker wastes by purely moving themselves in-between or during tasks.</p>
+                        <br>
+                        <p>To take an extreme example, when a pharmacy technician is in the front store putting up shelf labels, but are then diverted to walking all the way over to the drive-thru to help a customer, only to then walk halfway back to the will-call bin to retrieve prescriptions, and finally walk back to the drive-thru to complete the sale—that entire transaction is laden with Dead Time. This person cannot reasonably be expected to physically run from one point of the pharmacy to another for any reason, and even if they did, that is still Dead Time. It is time spend completing a task that accomplishes little in itself, other than to move the person from step A to step B of that same task.</p>
+                        <br>
+                        <p>So how will IHPAS tackle the Dead Time problem? Ah, those ideas are what will make it a success! We cannot tell you about specifics, but to answer your question in general terms, the goal of IHPAS will be to develop and implement software and small-footprint hardware solutions within the pharmacy to minimize the necessity of Dead Time for predefined daily tasks. These will not be large-scale operations, such as designing a robot to automatically retrieve prescriptions from the will-call bin; they will instead be small, dynamic, scalable modules, augmentations, and upgrades that will connect to processes already in place. For that reason, the service model that IHPAS will adopt is that of personal customization. IHPAS will survey client pharmacies, come up with a short list of handy modules that they think are a good fit for the workload, present them to the clientele, and if agreed upon will then tweak them to their specific needs, install them, and provide ongoing assistance and maintenance.</p>
+                    </div> <!--close IHPAS story-->
+                    <div class="col-sm-1 gutterCol"></div> <!--gutter-->
+                </span>
+                </section> <!--close row about us-->
+
+                <!--Sections that follow are placeholders only for now-->
+                <section class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6"></div>
+                </section>
 
 
-
-                    </div> <!--close col-->
-                </div> <!--close row about me-->
-
-
-
+                <section class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6"></div>
+                </section>
 
 
+                <section class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6"></div>
+                </section>
+
+            </article> <!--close background info-->
 
 
-
-
-
-
-
-
-
-        <div>
-            <h1 class="blueCenterHeadText" class="sectionHeader">Table of contents:</h1>
-                <ol class="listMargin">
-                    <li><a href=#fullProfHist>Full professional history</a></li>
-                    <li><a href=#fullEduHist>Full educational history</a></li>
-                    <li><a href=#currEnrich>Current enrichments</a></li>
-                    <li><a href=#pastEnrich>Past enrichments</a></li>
-                    <li><a href=#profPhil>Professional philosophy</a></li>
-                    <li><a href=#profSkills>Professional skills</a></li>
-                    <li><a href=#techProf>Technical proficiencies</a></li>
-                    <li><a href=#qualNOS>Professional qualities not otherwise specified</a></li>
-                    <li><a href=#refs>References</a></li>
-                    <li><a href=#links>Links to other resources</a></li>
-                </ol>
-        </div>
-    
-    
-    
-    
-        <div>
-    
-    
-    
-            <h3 id="fullProfHist" class="sectionHeader">Full Professional History</h3>
-                <table class="tableData">
-                    <tr>
-                        <th width="35%" class="tableHeader"><b>Location</b></th>
-                        <th width="35%" class="tableHeader"><b>Title</b></th>
-                        <th width="35%" class="tableHeader"><b>Dates</b></th>
-                        <th width="35%" class="tableHeader"><b>Description</b></th>
-                    </tr>
-                    <tr>
-                        <td>Milltown Pharmacy</td>
-                        <td>Pharmacist-in-charge</td>
-                        <td>Feb 2020 - Current</td>
-                        <td>XXX</td>
-                    </tr>
-                    <tr>
-                        <td>CVS, East Brunswick NJ</td>
-                        <td>Pharmacist-in-charge</td>
-                        <td>June 2019 - Nov 2019</td>
-                        <td>XXX</td>
-                    </tr>
-                    <tr>
-                        <td>CVS, North Brunswick NJ</td>
-                        <td>Staff pharmacist</td>
-                        <td>Oct 2018 - June 2019</td>
-                        <td>XXXXXXXXXXXXXXXXX</td>
-                    </tr>
-                    <tr>
-                        <td>CVS, Jamesburg NJ</td>
-                        <td>Pharmacist-in-charge</td>
-                        <td>Aug 2017 - Oct 2018</td>
-                        <td>XXX</td>
-                    </tr>
-                    <tr>
-                        <td>CVS, Marlboro NJ</td>
-                        <td>Pharmacy technician/intern</td>
-                        <td>Feb 2013 - Aug 2017</td>
-                        <td>XXX</td>
-                    </tr>
-                    <tr>
-                        <td>New Jersey Institute of Technology</td>
-                        <td>C2Prism fellow (NSF sponsored)</td>
-                        <td>Sept 2009 - May 2011</td>
-                        <td>XXX</td>
-                    </tr>
-                    <tr>
-                        <td>NJIT/Rutgers Federated Dept of Biology</td>
-                        <td>Teacher's assistant</td>
-                        <td>Aug 2008 - May 2012</td>
-                        <td>XXX</td>
-                    </tr>
-                    <tr>
-                        <td>Jersey Shore University Medical Center</td>
-                        <td>Summer intern</td>
-                        <td>June 2007 - Aug 2007</td>
-                        <td>others</td>
-                    </tr>
-                    <tr>
-                        <td>Passaic Beth Israel Hospital</td>
-                        <td>Summer intern</td>
-                        <td>June 2006 - Aug 2006</td>
-                        <td>XXX</td>
-                    </tr>
-                    
-                </table>
             
-        </div>
-    
-    
-        <div>
-            <h3 id="fullEduHist" class="sectionHeader">Full Educational History</h3>
-            <table class="tableData">
-                <tr>
-                    <td width="20%" class="tableHeader"><b>School</b></td>
-                    <td width="20%" class="tableHeader"><b>Timeframe</b></td>
-                    <td width="20%" class="tableHeader"><b>Subjects</b></td>
-                    <td width="18%" class="tableHeader"><b>Degree earned</b></td>
-                    <td width="40%" class="tableHeader"><b>Notes</b></td>
-                </tr>
-                <tr>
-                    <td>Fairleigh Dickinson University School of Pharmacy</td>
-                    <td>Sept 2012 - May 2017</td>
-                    <td>Pharmacy (PharmD)</td>
-                    <td>PharmD</td>
-                    <td text-align="justify">Most recent and highest degree earned</td>
-                </tr>
-                <tr>
-                    <td>NJIT/Rutgers-Newark Federated Dept of Biology</td>
-                    <td>Sept 2008 - May 2012</td>
-                    <td>Molecular and Cellular Biology (PhD)</td>
-                    <td>N/A</td>
-                    <td text-align="justify">Passed qualifying exam and thesis proposal was approved. However, I chose to change my career to pharmacy instead of going further with my research, since it would ultimately be a more rewarding and lucrative endeavour instead.</td>
-                </tr>
-                <tr>
-                    <td>New Jersey Institute of Technology</td>
-                    <td>Sept 2004 - May 2008</td>
-                    <td>Biological Sciences and Applied Mathematics</td>
-                    <td>BS (Biology), minor (Applied Mathematics)</td>
-                </tr>
-            </table>
-    
-        </div>
-    
-        <div">
-            <h3 id="currEnrich" class="sectionHeader">Current EnrichmentsXXXXXXrename???</h3>
-                <ul>
-                    <li>Rutgers Coding Bootcamp (current) June 2020 - Dec 2020 (expected). 
-                        <ul>
-                            <li>
-                                Gaining skills in full-stack web development including both front-end and back-end development. Languages involved include HTML, JavaScript, CSS, Node.js, jQuery, mySQL, and others.
-                            </li>
-                        </ul>
-                    </li>
-                    <li> oikfjdslkfg
-                    </li>
-                </ul>
-        </div>
-    
-        <div>
-            <h3 id="pastEnrich" class="sectionHeader">Past Enrichments</h3>
-                <ul>
-                    <li>Completed RxGenomix Certificate Program in Pharmacogenomics (May 2020).
-                    <li>Specialized in International Studies in high school
-                        <ul>
-                            <li>Subjects included geography, diplomacy, world cultures and societies, philosophy, international religions, world history, US history, world wars, and much more.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>ldkjfldsf
-                    </li>
-                </ul>
-        </div>
-    
-        <div>
-            <h3 id="profPhil" class="sectionHeader">Professional Philosophy</h3>
-                <p class="stdPgph">One of my core beliefs is that people are more than just capital in a business environment. It is true that we all experience wear and tear both physically and mentally on the job, and of that a manager must always be mindful and proactive. However, the sum of how they are treated with regard to their emotional health and well-being are just as important as anything else. For that reason, a successful manager must be absolutely sure to be constantly tuned into the happiness of their employees. Happy employees are the best employees. Unhappy employees are a source of wasted time and will tend to spread their ill feelings toward their co-workers, leading to a negative domino effect in the workplace. Whether I am in charge or a member of a larger team, I am always sure to keep this front-of-mind for the sake of workplace efficiency and well-being.</p>
-        </div>
-    
-    
-        <!--Be sure to keep all skills and others in the present tense for consistency and power -->
-    
-    
-        <div>
-            <h3 id="profSkills" class="sectionHeader">Professional Skills</h3>
-                <ul>
-                    <li><b>Pharmacy Skills</b>
-                        <ul>
-                            <li>As pharmacist-in charge in both independent and retail pharmacy settings:
-                                <ul>
-                                    <li>Proficient in PioneerRx: Workflow, reporting, sorting, searching, etc.
-                                    <li>Manages and optimizes workflow without complacency; ensures that waiting times for customers are as minimal as possible.</li>
-                                    <li>Keeps gross profits for each fill front-of-mind; suggests changes ("conversions") to large-loss medication orders where appropriate to minimize big hits to store profits. Also suggests conversions where appropriate when a potential change will increase profitability.</li>
-                                    <li>Reviews purchase orders and searches different vendors (e.g. ABC, RDC, Pharmsaver, Genetco, Integral, Trxade, Parmed, etc) to find the most cost-effective way to order medications</li>
-                                    <li>Compounds profitable non-sterile medication orders in a timely manner using Medisca as a primary guide.
-                                    <li>Inventory management: Directly conducts or supervises purchase orders, returns, inventory counts, controlled substance inventories, perpetual log inventories, drug returns, outdates,  XXX </li>
-                                    <li>Regulatory management: Ensures properly documented invoices, maintains state-compliant regulatory forms in orderly and readily retrievable fashion, keeps pharmacy abreast of regulatory updates and changes, XXX </li>
-                                    <li>Manages hiring, onboarding, and dismissal of team members.</li>
-                                    <li>Establishes and maintains amicable and loyal relationships with subordinates, co-workers, management, etc.</li>
-                                    <li>Maintains timely and ongoing communication with all team members in a succinct but meaningful way using an established approach that is organized, repeatable, and effective.</li>
-                                    <li>XXX></li>
-                                </ul>
-                            </li>
-                            
-                            <li>As a staff pharmacist in retail settings:
-                                <ul>
-                                    <li>Develops and maintains a friendly, productive, and ongoing line of communication with the pharmacist-in-charge both during and outside of work hours to ensure efficient pharmacy workflow around-the-clock.</li>
-                                    <li>Reflects the discipline of the pharmacist-in-charge during work hours to maintain the culture they have developed and to avoid undermining their management style.</li>
-                                    <li>Maintains the attitude of a pharmacist-in-charge while at work to maintain consistent discipline in the workplace.</li>
-                                    <li>Works to the level of the pharmacist-in-charge to ensure a succession plan for management should they need to quickly move the head pharmacist to another location. Shoulders some of their workload to free up time for the head pharmacist to conduct higher-level managerial activities.</li>
-                                </ul>
-                            </li>
-    
-                            <li>Other pharmacy-related proficiencies:
-                                <ul>
-                                    <li>Completed RxGenomix Certificate Program in Pharmacogenomics in May 2020. Accordingly, I am certified to provide pharmacogenomic counseling to indicated patients and bill Medicare for consultations.</li>
-                                    <li>Licensed for immunization in New Jersey.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-        </div>
-    
-    
-    <!-- Consider combining the following two sections? -->
-    
-      
-    
-        <div>
-            <h3 id="techProf" class="sectionHeader">Technical Proficiencies</h3>
-                <ul>
-                    <li>High aptitude for expression via written and spoken communication.</li>
-                    <li>Learning how to code for front-end and back-end web development via Rutgers online bootcamp night classes. Expected graduation date Dec 2020.</li>
-                    <li>Extremely knowledgable in the field of biology (outside of pharmacy), particularly human anatomy, physiology, cellular biology, and molecular biology.</li>
-                    <li>Highly proficient with Microsoft Office Suite (Word, Excel, Publisher, etc).</li>
-                    <li>Extremely comfortable and proficient with all modern Microsoft Windows operating systems from Windows 98 through Windows 10.</li>
-                    <li>Hobbiest PC builder; able to build PC rigs from the ground up, taking into account compatibilities and capabilities of motherboards, CPU, RAM, video components, power supply, component and case cooling paradigms, etc.</li>
-                </ul>
-    
-        </div>
-    
-        <div>
-            <h3 id="qualNOS" class="sectionHeader">Professional Qualities Not Otherwise Specified</h3>
-                <ul>
-                    <li>Passed Praxis II in both general biology and general sciences in January 2020.</li>
-                    <li>Self-teaching usage of Arduino XXXXXXX; my goal is to use this in the future to help automate workflow to improve pharmacy-workplace efficiency and thereby reduce expenses, wasted time, and stress on team members.</li>
-                    <li>Self-learning Adobe Photoshop to complement my full-stack coding education.</li>
-                    <li>Hobbiest smart-home LED lighting assembler, including both Philips Hue and generic lighting strips.</li>
-                </ul>
-    
-        </div>
-    
-        <div>
-            <h3 id="refs" class="sectionHeader">References</h3>
-        </div>
-    
-    
-        
-        <div>
-            <h3 class="blueLeftHeadText" id="links" class="sectionHeader">Links to other resources</h3>
-        </div>
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+<!--:::::::::::::::::::::::::::::-->
+<!--:::::::SECONDARY INFO::::::::-->
+<!--:::::::::::::::::::::::::::::-->
+
+            <!--TBD-->
+
+            <article> <!--forthcoming further details--> 
+
+                 <!--more placeholders-->
+                 <section class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6"></div>
+                </section>
+
+
+                <section class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6"></div>
+                </section>
+
+
+                <section class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6"></div>
+                </section>
+
+            </article> <!--close secondary info-->
+
+        </main> <!--close all info-->
 
 
 
+<!--:::::::::::::::::::::::::::::-->
+<!--:::::::::THE FOOTER::::::::::-->
+<!--:::::::::::::::::::::::::::::-->
+
+        <footer>
+            <script>
+                footerBox() //Calls a script from JS file that creates the footer and appends it to the HTML page. Was probably more work than just copying and positioning the same HTML code three times but I learned a ton from trying. Actually now that I know how to do this it will make dynamic web editing far more efficient.//
+            </script>
+        </footer>
 
 
 
+<!--:::::::::::::::::::::::::::::-->
+<!--:::::::UNUSED FOR NOW::::::::-->
+<!--:::::::::::::::::::::::::::::-->
+
+    <!--Nothing here... yet-->
 
 
 
+<!--:::::::::::::::::::::::::::::-->
+<!--::::END-HTML HOUSEKEEPING::::-->
+<!--:::::::::::::::::::::::::::::-->
 
-
-            <footer>
-                <script>
-                    footerBox() //Calls a script from JS file that creates the footer and appends it to the HTML page. Was probably more work than just copying and positioning the same HTML code three times but I learned a ton from trying. Actually now that I know how to do this it will make dynamic web editing far more efficient.//
-                </script>
-            </footer>
-        </container> <!--close the wrapper-->
-
-
-        <!--"You are here" popup script
-        <script>
-            youAreHere()
-        </script>
-        Not currently in use-->
-
-
-
-
-
-
-    </body> <!--close body-->
+    </container> <!--close the wrapper-->
+    
+</body> <!--close body-->
 
 </html> <!--end HTML-->

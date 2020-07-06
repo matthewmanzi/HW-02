@@ -1,20 +1,41 @@
+
+
 /*CONTAINER PARAMETERS*/
 
 /*push me*/
 
+.container {
+    width: 100%;
+}
+
 .headerContainer {
+    display: inline-flexbox;
     background-image: url(../Images/MTPheaderthumb.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: color-burn;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: -20%;
+    margin-bottom: -30pt; /*allows for the header and article to share space behind the navbar*/
 }
 
 .navContainer {
-    display: block;
-    width: 50%;
-    color: green;
+    display: inline-flexbox;
+    border-style: groove;
+    border-color: black;
+    border-width: 5pt;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: rgb(9,1,237);
+    background: radial-gradient(circle, rgba(9,1,237,0.8267682072829132) 0%, rgba(204,70,53,0.6502976190476191) 0%, rgba(101,61,172,1) 0%, rgba(62,57,217,1) 11%, rgba(173,63,85,1) 17%, rgba(118,53,141,1) 18%, rgba(18,17,64,0.9668242296918768) 20%, rgba(185,6,6,0.6474964985994398) 21%, rgba(236,106,29,1) 22%, rgba(236,106,29,1) 22%, rgba(184,64,74,1) 24%, rgba(204,70,53,1) 34%, rgba(212,72,45,0.7511379551820728) 35%, rgba(210,69,46,0.3477766106442577) 36%, rgba(81,47,179,0.5382528011204482) 36%, rgba(8,0,255,0.6446953781512605) 36%, rgba(163,61,95,0.8183648459383753) 36%, rgba(173,63,85,0.7875525210084033) 36%, rgba(177,66,83,1) 40%, rgba(219,82,40,1) 41%, rgba(155,58,98,1) 46%, rgba(104,38,144,0.7595413165266106) 50%, rgba(9,2,230,1) 52%, rgba(142,53,110,1) 57%, rgba(8,0,244,0.6671043417366946) 60%, rgba(56,31,201,1) 60%, rgba(104,62,158,1) 68%, rgba(128,78,136,0.8855917366946778) 70%, rgba(160,60,98,0.9360119047619048) 76%, rgba(197,68,61,1) 87%, rgba(181,68,75,1) 90%, rgba(255,76,0,0.9164040616246498) 92%, rgba(133,75,130,1) 95%, rgba(0,0,0,1) 100%, rgba(217,135,57,1) 100%, rgba(11,2,221,0.3897934173669467) 100%, rgba(100,96,198,1) 100%, rgba(9,9,100,1) 100%, rgba(9,9,121,1) 100%, rgba(10,10,25,0.7259278711484594) 100%, rgba(0,212,255,1) 100%);
+    /*Unnecessary fun*/
+}
 
+.navHeaderBox {
+    display: inline-flexblock;
 }
 
 .mainContainer {
@@ -59,7 +80,59 @@
 
 }
 
+/*ROW AND COL PARAMETERS*/
 
+
+#mattAndIHPAS {
+    display: inline-flexbox;
+    width: 100%;
+    color: black;
+    background-image: url(../Images/geoBG.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    border-top-style: solid;
+    border-top-color: black;
+    border-top-width: 5pt;
+}
+
+#aboutMatt {
+    display: inline-flexbox;
+    color: white;
+    background-color: hsla(224, 89%, 17%, 0.74);
+    padding: 10pt;
+    border-style: groove;
+    border-color: rgb(158, 76, 0);
+    border-width: 6pt;
+    text-align: justify;
+    margin-top: 40pt;
+    margin-bottom: 20pt;
+
+}
+
+#aboutIHPAS {
+    display: inline-flexblock;
+    color: white;
+    background-color: hsla(224, 89%, 17%, 0.74);
+    padding: 10pt;
+    border-style: groove;
+    border-color: rgb(158, 76, 0);
+    border-width: 6pt;
+    text-align: justify;
+    margin-top: 40pt;
+    margin-bottom: 20pt;
+
+}
+
+.gutterCol {
+    display: inline-flexbox;
+}
+
+.logoRow {
+    display: inline-block;
+    margin-bottom:  -10pt;
+}
 
 /*TEXT PARAMETERS*/
 
@@ -69,10 +142,10 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight: bold;
-    font-size: 100px;
+    font-size: 32pt;
     font-family: 'Permanent Marker', cursive;
     width: auto;
-    margin: 50px auto;
+    margin: 30px auto;
     text-align: center;
 }
 
@@ -81,17 +154,30 @@
 }
 
 .headSubtext {
-    font-style: oblique;
+    font-style: italic;
     font-weight: bolder;
-    font-size: 28pt;
+    font-size: 14pt;
     color: rgb(0, 0, 0);
     Font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: -webkit-linear-gradient(rgb(190, 122, 12), rgb(9, 21, 192));
+    background: -webkit-linear-gradient(rgb(255, 175, 46), rgb(9, 21, 192));
     background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-left: 0pt;
+    margin-left: 10%;
+    margin-top:5%;
+    text-align: right;
+    margin-right: 10%;
 }
+
+.navHeaderText {
+    font-weight: 700;
+    font-size: 12pt;
+}
+
+.navText {
+    
+}
+
 
 
 /*INTERACTIVE ITEMS*/
@@ -100,4 +186,13 @@
     width: 20%;
     color: aqua;
 
+}
+
+footer {
+    display: inline-block;
+    height: 20pt;
+    text-align: center;
+    font-weight: 1000;
+    background-color: rgb(68, 68, 173);
+    color: white;
 }
