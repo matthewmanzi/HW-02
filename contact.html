@@ -1,92 +1,263 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact Information</title>
+ 
 
-         <!--Clear CSS-->
-         <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
 
-         <!--CSS stylsheet-->
-         <link rel="stylesheet" type="text/css" href="./assets/css/HW02.css">
- 
-         <!--bootstrap-->
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
- 
-         <!--jQuery-->
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- 
-         <!--Popper JS-->
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
- 
-         <!--Latest JavaScript-->
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
- 
-         <!--Linked JS file containing my scripts-->
-         <script src="./assets/js/HW02.js"></script>
- 
-         <!--Responsive viewport-->
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-             <!--"width=device-width": sets the width of the page to follow the width of the device
-             "initial-scale=1":set initial zoom level when browser first loads the page-->
+<!--:::::::::::::::::::::::::::::-->
+<!--:::START-HTML HOUSEKEEPING:::-->
+<!--:::::::::::::::::::::::::::::-->
+
+        <!--CSS stylsheet-->
+        <link rel="stylesheet" href="./Assets/CSS/HW02.css">
+
+        <!--bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
+
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!--Popper JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!--Latest JavaScript-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <!--Linked JS file containing my scripts-->
+        <script src="Assets/JS/HW02.js"></script>
+
+        <!--Responsive viewport-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--Notes: "width=device-width" sets the width of the page to follow the width of the device. "initial-scale=1" sets initial zoom level when browser first loads the page-->
+        
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        
+        <!--Page title for the company I dream of starting one day in the distant future...-->
+        <title>Idle Hands Pharmacy Automation Deployment</title>
+
     </head>
 
-    <body>
-        
-        <container class="container-fluid">
 
-            <main class="mainContainer"> 
-            <!--to include header, info, message box, and send button-->
+
+    <body>
+
+<!--:::::::::::::::::::::::::::::-->
+<!--:::BEHIND THE SCENES ITEMS:::-->
+<!--:::::::::::::::::::::::::::::-->
+
+    <div id="pageTitle" hidden>contact info</div>
+    <!--hidden text used to self-reference the page when needed-->
+        
+    <div class="pageContainer"> <!--page wrapper-->
+
             
-                <section id="nameInfo"> 
-                <!--to include name info-->
+
+<!--:::::::::::::::::::::::::::::-->
+<!--:::::::HEADER SECTION::::::::-->
+<!--:::::::::::::::::::::::::::::-->
+
+        <header class="headerContainer">
+            <div class="row logoRow">
+                <div class="col-sm-12">
+                    <h2 class="fancyLogo">Idle Hands Pharmacy Automation Deployment</h1>
+                </div>
+            </div> <!--close top row-->
+
+            <div class="row">
+                <div class="col-sm-3"></div> <!--gutter-->
+                <div class="col-sm-9">
+                    <div>
+                    <p class="headSubtext">Contact us some day in the future for a free in-house consultation for how we can integrate Idle Hands into your pharmacy workflow and maximize your efficiency!</p>
+                    </div>
+                </div> <!--Close subtext col-->
+            </div> <!--close row-->
+
+            <div class="row" style="height: 10pt"></div>
+
+
+
+<!--:::::::::::::::::::::::::::::-->
+<!--:::::::NAVIGATION BAR::::::::-->
+<!--:::::::::::::::::::::::::::::-->
+
+        <nav class="navbar navbar-expand-sm navbar-dark navContainer">
+            <!--"navbar-expand-sm" dictates how small the screen must become in order for X to Y-->
+            <div class="navHeaderText"><b>Explore Idle Hands:</b></div>
+            <ul class="navbar-nav mr-auto">       
+                <!--Notes: margin-right (mr) auto pushes all items in the list to the left, keeping the right space available for additional items-->
+                
+                <li class="nav-item nav-justified">
+                    <a href="portfolio.html" class="nav-link naxText">Portfolio</a>
+                </li>
+                
+                <li class="nav-item nav-justified navText">
+                    <a href="contact.html" class="nav-link">Contact Information</a>
+                </li>
+                
+                <li class="nav-item nav-justified navText">
+                    <a href="index.html" class="nav-link">Home/About Me</a>
+                </li>
+                
+                <li class="nav-item nav-justified navText">
+                    <a class="nav-link"> || You are currently on the <b><script>youAreHere()</script></b> page.</a>
+                </li>                
+            </ul>
+        </nav>
+
+        </header> <!--Close header-->
+
+
+
+<!--:::::::::::::::::::::::::::::-->
+<!--::::::::CONTACT INFO:::::::::-->
+<!--:::::::::::::::::::::::::::::-->
+            
+
+                <section class="basicPageLayout"> 
+                <!--to include header, info, message box, and send button-->
+                
                     <div class="row">
                         <div class="col-sm-12">
-                            <h3>Name</h3>
-                            <p>Matthew Manzi, PharmD</p>
+                            <div class="contactBox">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                            <p class="contactInfoHeader">Chief Executive Officer:</p>                              
+                                            <p class="contactInfoHeader">Matthew Manzi, PharmD</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img class="imageBox" src="./Assets/Images/coldHat.jpg">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="contactBox">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="contactInfoHeader">Chief Operating Officer:</p>                              
+                                        <p class="contactInfoHeader">Matthew Manzi, PharmD</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img class="imageBox" src="./Assets/Images/topHat.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                                        
+                            <div class="contactBox">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="contactInfoHeader">Chief Financial Officer:</p>                              
+                                        <p class="contactInfoHeader">Matthew Manzi, PharmD</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img class="imageBox" src="./Assets/Images/sombreroHat.jpg">
+                                    </div>
+                                </div>
+                            </div>           
+                                        
+                            <div class="contactBox">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="contactInfoHeader">Chief Compliance Officer:</p>                              
+                                        <p class="contactInfoHeader">Matthew Manzi, PharmD</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img class="imageBox" src="./Assets/Images/strawHat.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contactBox">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="contactInfoHeader">Chief Technical Officer:</p>                              
+                                        <p class="contactInfoHeader">Matthew Manzi, PharmD</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img class="imageBox" src="./Assets/Images/glassesHat.jpg">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contactBox">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="contactInfoHeader">Chief Marketing Officer:</p>                              
+                                        <p class="contactInfoHeader">Matthew Manzi, PharmD</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img class="imageBox" src="./Assets/Images/babyHat.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+
+                <section id="contactInfo"> 
+                <!--to include all items related to contacting me-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class=contactBottom>
+                                <p>Contact info:</p>
+                                <p>Email: MattManziPharmacist@gmail.com</p>
+                                <p>Github: <a href="https://github.com/matthewmanzi" alt="My first and last name without spaces, at Github.com">https://github.com/matthewmanzi</a></p>
+                            </div>
                         </div>
                     </div>
                 </section>
-
-
-            <section id="contactInfo"> 
-            <!--to include all items related to contacting me-->
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h3>Contact info</h3>
-                        <p>Email: MattManziPharmacist@gmail.com</p>
-                        <p>Github: <a href="https://github.com/matthewmanzi" alt="My first and last name without spaces, at Github.com">https://github.com/matthewmanzi</a></p>
-                    </div>
-                </div>
-            </section>
-    
-            <section id="messageMe"> 
-            <!--to include message box for email message and button-->
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h3>Send me a message!</h3>
-                        <kbd id="messageBox"> 
-                        <!--section for textual input from the user-->
-                            <form class="form-line">
-                                <input class="form-control mr-sm-2" type="email" placeholder="Send us a message!" aria-label="Send">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Send!</button>
-                            </form>
-
-
-
-
-
-
-                        <!--:::SCRIPT TO INCLUDE MESSAGE FORM HERE:::-->
                     
-                        </kbd> <!--close message box section-->
-            
-                        <button id="sendMessage">
-                        <!--:::NEEDS MORE STUFF:::-->
-                            Submit
-                        </button>
+           
+                <section id="messageMe"> 
+                    <!--to include all items related to contacting me-->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="contactBottom">
+                            <p>Send us a message!</p>
+                                <div class="col-sm-6">
+                                    <kbd id="messageBox"> 
+                                    <!--section for textual input from the user-->
+                                    <form class="form-line">
+                                
+                                    <input class="form-control mr-sm-2" type="email" placeholder="Send us a message!" aria-label="Send">
+                                    </form>                                      
+                                    </kbd> <!--close message box section-->
+                                </div>
+                                <div class="col-sm-2">              
+                                    <button id="sendMessage">
+                                    <!--:::NEEDS MORE STUFF:::-->
+                                    Submit
+                                    </button>
+                                </div>
+                </section> <!--close messaging section-->
 
-        </section> <!--close messaging section-->
+        </section> <!--close contact session-->
 
-    </section> <!--close contact session-->
+<!--:::::::::::::::::::::::::::::-->
+<!--:::::::::THE FOOTER::::::::::-->
+<!--:::::::::::::::::::::::::::::-->
 
-</main>
+<footer>
+    <script>
+        footerBox() //Calls a script from JS file that creates the footer and appends it to the HTML page. Was probably more work than just copying and positioning the same HTML code three times but I learned a ton from trying. Actually now that I know how to do this it will make dynamic web editing far more efficient.//
+    </script>
+</footer>
+
+
+
+<!--:::::::::::::::::::::::::::::-->
+<!--:::::::UNUSED FOR NOW::::::::-->
+<!--:::::::::::::::::::::::::::::-->
+
+<!--Nothing here... yet-->
+
+
+
+<!--:::::::::::::::::::::::::::::-->
+<!--::::END-HTML HOUSEKEEPING::::-->
+<!--:::::::::::::::::::::::::::::-->
+
+</div> <!--close the wrapper-->
+
+</body> <!--close body-->
+
+</html> <!--end HTML-->

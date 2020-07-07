@@ -1,6 +1,6 @@
 function footerBox() {
     var foot = document.querySelector("footer");
-    var footerText = document.createTextNode("Copyright 2020 by Idle Hands Pharmacy Automation");
+    var footerText = document.createTextNode("Copyright 2020 by Idle Hands Pharmacy Automation Deployment");
     foot.appendChild(footerText);
     //IT FREAKING WORKED!!!!!//
 }

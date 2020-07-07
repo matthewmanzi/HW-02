@@ -2,10 +2,9 @@
 
 /*CONTAINER PARAMETERS*/
 
-/*push me*/
 
-.container {
-    width: 100%;
+.pageContainer {
+    display: grid;
 }
 
 .headerContainer {
@@ -14,10 +13,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-blend-mode: color-burn;
-    width: 100%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 5pt;
+    padding-right: 5pt;
     padding-top: -20%;
     margin-bottom: -30pt; /*allows for the header and article to share space behind the navbar*/
 }
@@ -45,27 +42,23 @@
 }
 
 #contactInfo {
-    width: 80%;
-    color: blue;
+    width:     color: blue;
 
 }
 
 #nameInfo {
-    width: 70%;
-    color: black;
-
+    width: 100%;
+    color: rgb(0, 133, 111);
 }
 
 #emailInfo {
     width: 70%;
     color: brown;
-
 }
 
 #messageMe {
-    width: 70%;
+    background-color: rgb(229, 255, 0);
     color: orange;
-
 }
 
 #messageBox {
@@ -83,8 +76,8 @@
 /*ROW AND COL PARAMETERS*/
 
 
-#mattAndIHPAS {
-    display: inline-flexbox;
+.basicPageLayout {
+    display: grid;
     width: 100%;
     color: black;
     background-image: url(../Images/geoBG.jpg);
@@ -95,9 +88,10 @@
     border-top-style: solid;
     border-top-color: black;
     border-top-width: 5pt;
+
 }
 
-#aboutMatt {
+.mainBox {
     display: inline-flexbox;
     color: white;
     background-color: hsla(224, 89%, 17%, 0.74);
@@ -108,31 +102,74 @@
     text-align: justify;
     margin-top: 40pt;
     margin-bottom: 20pt;
-
 }
 
-#aboutIHPAS {
-    display: inline-flexblock;
+.comingSoonRow {
+}
+
+.comingSoonCol {
+    display: inline-flexbox;
     color: white;
     background-color: hsla(224, 89%, 17%, 0.74);
+    text-align: center;
     padding: 10pt;
     border-style: groove;
     border-color: rgb(158, 76, 0);
     border-width: 6pt;
-    text-align: justify;
-    margin-top: 40pt;
-    margin-bottom: 20pt;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.testCol {
+    display: inline-flexbox;
+    color: white;
+    background-color: hsla(224, 89%, 17%, 0.74);
+    text-align: center;
+    padding: 10pt;
 
 }
 
 .gutterCol {
-    display: inline-flexbox;
+    display: inline-block;
 }
 
 .logoRow {
     display: inline-block;
     margin-bottom:  -10pt;
 }
+
+#contactTop {
+    display: inline-flexbox;
+    color: white;
+    background-color: hsla(224, 89%, 17%, 0.74);
+    padding: 10pt;
+    border-style: groove;
+    border-color: rgb(158, 76, 0);
+    border-width: 6pt;
+    text-align: justify;
+    margin-top: 40pt;
+    margin-bottom: 20pt;
+}
+
+.contactBox {
+    display:inline-block;
+    color: white;
+    background-color: hsla(224, 89%, 17%, 0.74);
+    padding: 10pt;
+    border-style: groove;
+    border-color: rgb(158, 76, 0);
+    border-width: 6pt;
+    text-align: justify;
+    margin-top: 40pt;
+    margin-bottom: 20pt;
+    width: 30%;
+ }
+
+ .contactBottom {
+     background-color: hsla(224, 89%, 17%, 0.74);
+     color: white;
+     width: 100%;
+ }
 
 /*TEXT PARAMETERS*/
 
@@ -177,6 +214,41 @@
 .navText {
     
 }
+
+.meetMattHead {
+    color: black;
+    font-weight: 500;
+    text-align: center;
+}
+
+.meetIHPADHead {
+    color: black;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contactInfoHeader {
+    text-align: center;
+}
+
+
+/*STRUCTURAL PIECES*/
+
+.dividerLine {
+    display: inline-block;
+    width: 80%;
+    border-width: 3pt;
+    border-style: solid;
+    border-color: hsla(224, 96%, 50%, 0.897);
+}
+
+.imageBox {
+    display: inline-flexbox;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
 
 
 
