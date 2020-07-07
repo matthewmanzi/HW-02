@@ -13,10 +13,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-left: 5pt;
-    padding-right: 5pt;
-    padding-top: -20%;
-    margin-bottom: -30pt; /*allows for the header and article to share space behind the navbar*/
+
 }
 
 .navContainer {
@@ -42,8 +39,9 @@
 }
 
 #contactInfo {
-    width:     color: blue;
-
+    width: 60%;
+    margin: auto;
+    color: rgb(182, 182, 255);
 }
 
 #nameInfo {
@@ -57,7 +55,8 @@
 }
 
 #messageMe {
-    background-color: rgb(229, 255, 0);
+    width: 70%;
+    margin: auto;
     color: orange;
 }
 
@@ -88,7 +87,6 @@
     border-top-style: solid;
     border-top-color: black;
     border-top-width: 5pt;
-
 }
 
 .mainBox {
@@ -160,15 +158,36 @@
     border-color: rgb(158, 76, 0);
     border-width: 6pt;
     text-align: justify;
-    margin-top: 40pt;
+    margin-top: 20pt;
     margin-bottom: 20pt;
-    width: 30%;
+    width: auto 0%;
+}
+
+.contactBox {
+    display:inline-block;
+    color: white;
+    background-color: hsla(224, 89%, 17%, 0.74);
+    padding: 10pt;
+    border-style: groove;
+    border-color: rgb(158, 76, 0);
+    border-width: 6pt;
+    text-align: justify;
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+    width: auto 0%;
  }
 
  .contactBottom {
      background-color: hsla(224, 89%, 17%, 0.74);
      color: white;
      width: 100%;
+ }
+
+ .subTextBox {
+     width: 75%;
+     position: static;
+     margin: 0 auto;
+     background-color: hsla(224, 96%, 50%, 0.2);
  }
 
 /*TEXT PARAMETERS*/
@@ -182,7 +201,6 @@
     font-size: 32pt;
     font-family: 'Permanent Marker', cursive;
     width: auto;
-    margin: 30px auto;
     text-align: center;
 }
 
@@ -202,7 +220,7 @@
     -webkit-text-fill-color: transparent;
     margin-left: 10%;
     margin-top:5%;
-    text-align: right;
+    text-align: center;
     margin-right: 10%;
 }
 
@@ -211,8 +229,32 @@
     font-size: 12pt;
 }
 
-.navText {
-    
+#teamIntro {
+    display: inline-flexbox;
+    color: white;
+    background-color: hsla(224, 89%, 17%, 0.74);
+    padding: 10pt;
+    border-style: groove;
+    border-color: rgb(158, 76, 0);
+    border-width: 6pt;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 20pt;
+}
+
+#portfolioIntro {
+    display: inline-flexbox;
+    color: white;
+    background-color: hsla(224, 89%, 17%, 0.74);
+    padding: 10pt;
+    border-style: groove;
+    border-color: rgb(158, 76, 0);
+    border-width: 6pt;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 20pt;
 }
 
 .meetMattHead {
@@ -229,6 +271,28 @@
 
 .contactInfoHeader {
     text-align: center;
+    font-size: 15pt;
+}
+
+.contactInfoSubHead {
+    text-align: center;
+    font-size: 12pt;
+}
+
+.galleryInfoHeader {
+    text-align: center;
+    font-size: 15pt;
+}
+
+.galleryInfoSubHead {
+    text-align: center;
+    font-size: 12pt;
+}
+
+
+.contactUsHead {
+    font-size: 14pt;
+    font-weight: bolder;
 }
 
 
@@ -267,4 +331,12 @@ footer {
     font-weight: 1000;
     background-color: rgb(68, 68, 173);
     color: white;
+}
+
+.imageHoldBox {
+    display: inline-block;
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+
 }
