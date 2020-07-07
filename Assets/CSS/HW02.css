@@ -284,6 +284,18 @@
     font-size: 15pt;
 }
 
+.galleryMainHead {
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+}
+
+.galleryMainSub {
+    text-align: center;
+    font-size: 12pt;
+    color: white;
+}
+
 .galleryInfoSubHead {
     text-align: center;
     font-size: 12pt;
